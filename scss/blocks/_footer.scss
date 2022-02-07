@@ -1,0 +1,160 @@
+.easy{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+
+
+
+
+.site-footer{
+    background: #2D314D;
+}
+
+.easy__links{
+    margin-top: 57px;
+}
+
+
+.easy__icon{
+    color: #fff;
+  transition: color 0.4s ease;
+  &:hover{
+    color: #30C88F;
+  }
+}
+
+.easy__icon + .easy__icon{
+    margin-left: 13px;
+}
+
+.site-footer__list{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+.site-footer__boxingg{
+    display: flex;
+    margin-left: 131px;
+    margin-right: 255px;
+}
+
+
+.site-footer__list:nth-child(2){
+    margin-left: 131px;
+}
+
+.site-footer__item + .site-footer__item{
+    margin-top: 8px;
+}
+
+
+.site-footer__link{
+    
+    text-decoration: none;
+    font-family: PublicSans;
+    font-size: 15px;
+    line-height: 26px;
+    /* identical to box height, or 173% */
+    letter-spacing: -0.234375px;
+    color: #FFFFFF;
+    color: #fff;
+  transition: color 0.4s ease;
+  &:hover{
+    color: #30C88F;
+  }
+}
+    
+
+.site-footer__boxing{
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-end;
+    align-items: flex-end;
+}
+    
+    
+.site-footer__links{
+    max-width: 163px;
+    margin-bottom: 24px;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    padding: 8px 33px;
+    display: inline-block;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 22px;
+    transition: color 0.4s ease;
+    &:hover{
+        opacity: 0.4;
+    }
+}
+
+
+.site-footer__desk{
+    
+    font-family: PublicSans;
+    font-size: 15px;
+    line-height: 26px;
+    
+    text-align: right;
+    letter-spacing: -0.234375px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+
+
+
+@media only screen and (max-width:426px){
+    .site-footer{
+        padding: 40px 0;
+    }
+
+    .site-footer__box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .easy__box{
+        width: 100%;
+        max-width: 184px;
+        min-height: 84px;
+        margin-bottom: 32px;
+        align-items: center;
+    }
+
+    .site-footer__boxingg{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-footer__list{
+        width: 100%;
+        max-width: 160px;
+        max-height: 196px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+}

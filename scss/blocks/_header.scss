@@ -1,0 +1,130 @@
+.site-header{
+    background-color:  #FFFFFF;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    
+}
+
+
+.site-header__btn{
+    display: none;
+}
+
+.site-header__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    
+}
+
+
+.navbar__list{
+    display: flex;
+    list-style: none;
+}
+
+.navbar__item + .navbar__item{
+    margin-left: 30px;
+}
+
+.navbar__link{
+    text-decoration: none;
+    font-family: PublicSans;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.107692px;
+    color: #9597A5;
+    position: relative;
+   &:hover{
+    &::before{
+        content: '';
+        width: 51px;
+        height: 4px;
+        background: $main-gradient;
+        position: absolute;
+        left: -5px;
+        bottom: -32px;
+      }
+   }
+}
+
+
+
+.site-header__link{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    padding: 8px 33px;
+    display: block;
+    text-align: center;
+    border-radius: 22px;
+    &:hover{
+        opacity: 0.4;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:426px) {
+    .site-header__box{
+        padding: 22px 24px;
+        position: relative;
+         background-color: #fff;
+    }
+
+
+    .navbar{
+        display: inline-block;
+    }
+
+    .site-header__btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        width: 40px;
+        height: 30px;
+    }
+
+    .site-header__link{
+        display: none;
+    }
+
+    .navbar__list{
+        display: inline-block;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 68px;
+        left: 0;
+        width: 327px;
+        height: 265px;
+        align-items: center;
+        flex-direction: column;
+        padding: 32px 0;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 4px;
+        
+    }
+
+
+    .navbar__item {
+        margin-bottom: 24px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
