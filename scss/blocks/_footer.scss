@@ -146,15 +146,25 @@
     }
 
     .site-footer__boxingg{
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        margin: 0 auto;
+        // justify-content: center;
+        // align-items: center;
     }
 
     .site-footer__list{
         width: 100%;
         max-width: 160px;
         max-height: 196px;
-        margin: 0 auto;
+        // margin: 0 auto;
         margin-bottom: 32px;
+        text-align: center;
+    }
+
+
+
+    .site-footer__list:nth-child(2){
+        margin-left: 0;
     }
 }

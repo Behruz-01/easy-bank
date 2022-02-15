@@ -39,14 +39,16 @@
     color: #9597A5;
     position: relative;
    &:hover{
+       color: black;
     &::before{
         content: '';
         width: 51px;
         height: 4px;
+        
         background: $main-gradient;
         position: absolute;
         left: -5px;
-        bottom: -32px;
+        bottom: -35px;
       }
    }
 }

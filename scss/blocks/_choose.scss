@@ -38,16 +38,18 @@
 
 
 .choose__item{
-    margin-top: 150px;
+    margin-top: 72px;
     max-width: 255px;
     position: relative;
     margin-bottom: 94px;
     &::before{
         content: "";
-        position: absolute;
-        top: -78px;
-        z-index: 1;
+        
+        // position: absolute;
+        // top: -78px;
+        // z-index: 1;
         background-image: url(../../images/choose.svg);
+        display: block;
         width: 72px;
         height: 72px;
         background-repeat: no-repeat;
@@ -99,11 +101,13 @@ color: #2D314D;
      }
 
      .choose__item{
-         position: relative;
+        //  position: relative;
+        margin: 0 auto;
          &::before{
-            position: absolute;
-            top: -78px;
-            left: 78px;
+             margin: 0 auto;
+            // position: absolute;
+            // top: -78px;
+            // left: 78px;
          }
      }
  }
